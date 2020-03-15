@@ -1,0 +1,3 @@
+LI R0 0
+LI R1 1
+ADD R0 R1 R3

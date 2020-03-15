@@ -1,0 +1,17 @@
+{
+  "RISC_UVSQ":
+  [
+    "LI R O",
+    "ADD R R R",
+    "SUB R R R",
+    "DIV R R R",
+    "MULT R R R",
+    "LW R R O",
+    "SW R R O",
+    "OR R R R",
+    "AND R R R",
+    "BNEZ R R O",
+    "SLT R R R",
+    "JUMP R O"
+  ]
+}
