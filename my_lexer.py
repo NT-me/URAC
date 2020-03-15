@@ -43,7 +43,7 @@ def lexe(listParse):
                             # Cas où il devrait y avoir un registre mais il n'y en a pas
                             erreur0 = True
                             break
-                        if p[:1] != 'R' and listI[ite][:1] == 'R':
+                        if p[:1] == 'O' and listI[ite][:1] == 'R':
                             # Cas où il devrait y avoir un offset mais il y a un registre
                             erreur0 = True
                             break
@@ -57,7 +57,7 @@ def lexe(listParse):
         if erreur or erreur0:
             print("Erreur de synthaxe ligne : \n => {}".format(i))
             quit()
-        else :
+        else:
             res.append(listI)
 
     return res
