@@ -19,8 +19,16 @@ def exec_res(code):
         ca = ca + 1
 
     while CO < taille_prog:
-        exec(code[CO])
-        exec("print(CO)")
+        if 'JUMP' not in code[CO] or 'BNEZ' not in code[CO]:
+            exec(code[CO])
+        else :
+            if 'JUMP' in code[CO]:
+                J = code[CO].split(" ")
+                CO = CO + (int(eval(J[1])) + int(J[2]))
+            elif 'BNEZ' in code[CO]:
+                B = code[CO].split(" ")
+                if eval(code[1]) != 0:
+                    CO = CO + (int(eval(B[0])) + int(B[2]))
         print(code[CO])
 
         CO = CO + 1

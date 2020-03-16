@@ -53,14 +53,16 @@ def JUMP(R0, O):
     nb_l = int(O)/2
     nb_l = int(nb_l)
     O.replace("+", "")
-    res = "CO = CO + ({} + {})".format(R0, nb_l)
+    # res = "CO = CO + ({} + {})".format(R0, nb_l)
+    res = "JUMP {} {}".format(R0, nb_l)
 
     return res
 
 
 def BNEZ(R0, R1, O):
     nb_l = int(O)/2
-    if type(nb_l) != type(2):
-        # Cas où ce n'est pas un multiple de deux
-        print("ERREUR FATAL : Offset d'un bnez n'est pas un nombre pair !")
-        quit()
+    nb_l = int(nb_l)
+    O.replace("+", "")
+    res = "BNEZ {} {} {}".format(R0, R1, O)
+
+    return res
