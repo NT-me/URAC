@@ -45,7 +45,7 @@ def exec_res(code):
                 else:
                     CO = CO + 1
 
-        time.sleep(1)
+        #time.sleep(1)
 
     print("--- --- ---\n\n")
     lst = dir()
