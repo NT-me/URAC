@@ -22,7 +22,7 @@ Pour l'exécuter :
 
 3. Vous aurez alors un resultat en 3 parties, la première nommée "--- Python (approx) Conversion ---" affiche l'équivalent en python approximatif de votre code. Ensuite une seconde partie avec les valeurs des registres et tout en bas les valeurs sauvegardées dans la mémoire.
 
-**ATTENTION :** La mémoire est simulée par un tableau de 1000 cases, si vous excédé ça vous aurez une erreur.
+**ATTENTION :** La mémoire est simulée par un tableau de 1000 cases, si vous excédez ce chiffre il y aura une erreur fatale.
 
 ## Rappel
 Si vous voulez vous renseigner sur les jeu d'instruction utilisé il est décrit dans "jeu.json".
