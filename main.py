@@ -11,6 +11,7 @@ def exec_res(code):
     ca = 0
     ca0 = 0
     CO = 0
+    R0 = 0
 
     MEM = list()
     taille_prog = len(code)
